@@ -2,10 +2,10 @@
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
-.header{
-    background-image: url('images/header_bg.png'),url('images/developer.png');
-    background-repeat: no-repeat;
-    background-position: bottom right, left;
+.header {
+  background-image: url("images/header_bg.png"), url("images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, left;
 }
 
 /* mav */
@@ -22,11 +22,16 @@ nav ul {
 nav li {
   list-style: none;
   padding: 0px 10px;
+  font-size: 1.3em;
+}
+nav li:hover {
+  background-color: rgb(240, 235, 235);
+  color: black;
 }
 nav .logo-color {
   color: red;
 }
-nav .logo{
+nav .logo {
   font-size: 2.5em;
 }
 .btn {
@@ -38,6 +43,7 @@ nav .logo{
   font-size: 18px;
   color: #ffffff;
   padding: 5px 10px;
+  border: 0;
 }
 
 /* banner */
@@ -52,7 +58,7 @@ nav .logo{
   font-weight: 600;
   font-size: 45px;
 }
- .name-tittle {
+.name-tittle {
   font-weight: 700;
   font-size: 85px;
   margin-top: 5px;
@@ -63,27 +69,192 @@ nav .logo{
   color: #757575;
 }
 .btn-cv {
-    width: 200px;
-    height: 64px;
-    background: #fd6e0a;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    padding: 10px 17px;
-    margin-top: 10px;
-  }
-  .btn-cn {
-    width: 150px;
-    height: 64px;
-    background-color: transparent;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 20px;
-    text-align: center;
-    color: red;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
+  width: 200px;
+  height: 64px;
+  background: #fd6e0a;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 17px;
+  margin-top: 10px;
+  border: 0;
+}
+.btn-cn {
+  width: 150px;
+  height: 64px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: red;
+  padding: 10px 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 0.5 orange;
+}
+
+/* about section */
+.about {
+  text-align: center;
+  margin: 110px 230px;
+  padding: 50px 200px;
+  background: #fff8f3;
+}
+.about-tittle {
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 35px;
+}
+.about-desc {
+  margin-top: 50px;
+  color: #757575;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.infotit {
+  font-weight: 400;
+  font-size: 20px;
+  color: #757575;
+}
+.infodesc {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* what i do */
+
+.wid {
+  text-align: center;
+  margin: 110px 150px;
+  padding: 50px 150px;
+}
+.wid-tittle {
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 35px;
+}
+.wid-desc {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #757575;
+}
+.skill {
+  display: flex;
+  gap: 24px;
+  margin-top: 50px;
+}
+.skill-tittle {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.skill-desc {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+  margin-top: 10px;
+}
+.skill-info {
+  text-align: left;
+  background: #ffffff;
+  box-shadow: 0px 6px 50px rgba(203, 52, 52, 0.246);
+  border-radius: 5px;
+  padding: 30px;
+}
+.resume{
+  text-align: center;
+  margin: 110px 100px;
+  padding: 50px;
+}
+.res{
+  display: flex;
+  
+}
+.res-tittle{
+  font-weight: 700;
+font-size: 35px;
+margin-bottom: 50px;
+
+
+}
+.myer-tittle{
+  font-weight: 700;
+font-size: 30px;
+text-align: left;
+margin-bottom: 30px;
+
+}
+.er{
+  padding: 30px 50px;
+}
+.er-info{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.er-tittle{
+  font-weight: 700;
+font-size: 25px;
+margin: 20px 0;
+}
+.er-ins{
+  font-weight: 600;
+  font-size: 20px;
+  color: #757575;
+}
+.er-desc{
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+  margin: 20px 0;
+}
+hr{
+  border: 1px solid #D1D1D1;
+}
+.footer{
+  display: flex;
+  padding: 100px 200px;
+  gap: 100px;
+  background: #FFF8F3;
+  text-align: center;
+}
+.connect a{
+  padding: 0 10px;
+}
+.connect, .mesgform{
+  text-align: left;
+ 
+}
+.f-title{
+  font-weight: 700;
+font-size: 35px;
+color: #181818;
+margin-bottom: 20px;
+}
+.f-desc{
+  font-weight: 400;
+font-size: 16px;
+color: #474747;
+margin-bottom: 20px;
+}
+.mesgform input[type="text"],input[type="email"], textarea{
+  margin-bottom: 24px;
+  border: 0;
+  width: 100%;
+  color: #fd6e0a;
+  padding: 5px 30px;
+}
+input{
+  height: 50px;
+}
